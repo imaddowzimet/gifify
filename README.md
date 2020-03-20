@@ -11,22 +11,24 @@ status](https://travis-ci.org/imaddowzimet/gifify.svg?branch=master)](https://tr
 coverage](https://codecov.io/gh/imaddowzimet/gifify/branch/master/graph/badge.svg)](https://codecov.io/gh/imaddowzimet/gifify?branch=master)
 <!-- badges: end -->
 
-The goal of gifify is to …
+gifify is a simple wrapper for the amazing
+[magick](https://cran.r-project.org/web/packages/magick/vignettes/intro.html)
+package that simplifies the process of importing videos, adding
+subtitles, and turning them into GIFs for your meme-ing needs.
 
 ## Installation
 
-And the development version from [GitHub](https://github.com/) with:
+Install the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-#devtools::install_github("imaddowzimet/gifify")
+devtools::install_github("imaddowzimet/gifify")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
-#library(gifify)
-## basic example code
+library(gifify)
 ```
+
+![](brilliant.gif)
