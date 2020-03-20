@@ -1,5 +1,5 @@
 Package: gifify
-Title: What the Package Does (One Line, Title Case)
+Title: Take Video Files and Turn Them into GIFs
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Isaac",
