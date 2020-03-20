@@ -11,3 +11,5 @@ Description: Take video files and turn them into GIFs with subtitles
 License: What license it uses
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/imaddowzimet/gifify
+BugReports: https://github.com/imaddowzimet/gifify/issues
