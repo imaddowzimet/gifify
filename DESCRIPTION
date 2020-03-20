@@ -8,8 +8,17 @@ Authors@R:
            email = "imaddowzimet@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: Take video files and turn them into GIFs with subtitles
-License: What license it uses
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/imaddowzimet/gifify
 BugReports: https://github.com/imaddowzimet/gifify/issues
+Suggests: 
+    covr,
+    testthat,
+    spelling
+Language: en-US
+Imports: 
+    magick,
+    assertthat
+RoxygenNote: 6.1.1
