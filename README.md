@@ -27,6 +27,10 @@ devtools::install_github("imaddowzimet/gifify")
 
 ## Example
 
+To use *gifify*, just pass it a link to a video file with the clip you
+want to subtitle (already cut to the correct length), and the text you
+want for the subtitle.
+
 ``` r
 library(gifify)
 ```
