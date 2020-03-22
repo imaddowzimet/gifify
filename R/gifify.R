@@ -4,7 +4,7 @@
 #'
 #' @param file File path to video file
 #' @param text Subtitle text (one or two text strings)
-#' @param cut If using multiple subtitles, the frame of the video when the subtitles should switch
+#' @param cut If using multiple subtitles, the frame of the video when the subtitles should switch (might take some experimentation)
 #' @param gifname Name of exported file. Defaults to "brilliant.gif"
 #' @param width width of exported file
 #' @param color color of subtitle text
