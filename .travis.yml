@@ -2,8 +2,7 @@
 
 language: R
 cache: packages
-after_success:
-  - Rscript -e 'covr::codecov()'
+
   addons:
   apt:
     update: true
@@ -21,3 +20,7 @@ after_success:
       - r-cran-rgdal
       - libfftw3-dev
       - cargo
+
+      after_success:
+  - Rscript -e 'covr::codecov()'
+
