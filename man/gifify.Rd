@@ -13,7 +13,7 @@ gifify(file, text = "", cut = NULL, gifname = "brilliant.gif",
 
 \item{text}{Subtitle text (one or two text strings)}
 
-\item{cut}{If using multiple subtitles, the frame of the video when the subtitles should switch}
+\item{cut}{If using multiple subtitles, the frame of the video when the subtitles should switch (might take some experimentation)}
 
 \item{gifname}{Name of exported file. Defaults to "brilliant.gif"}
 
