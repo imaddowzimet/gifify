@@ -17,18 +17,18 @@
 #'
 
 gifify <- function(file, text = "", cut = NULL,  gifname = "brilliant.gif",
-                   width = "400", color = "yellow", size = 22,
+                   width = "400", color = "yellow", size = 22, strokecolor = "black",
                    gravity = "south", style = "italic", weight = 700) {
   assertthat::assert_that(length(text) <=2, msg = "More than two text strings provided")
   if (length(text) == 2)  {assertthat::assert_that(length(cut)==1, msg = "More one than one text string provided; please provide a cut point for when they should switch")}
-  video       <- magick::image_read_video(file, fps=30)
+  video       <- magick::image_read_video(file, fps=20)
   video_small <- magick::image_scale(video, width)
   if (length(text) == 1) {
     video_full <- magick::image_annotate(video_small,
                                  text[1],
                                  size = size,
                                  gravity = gravity,
-                                 color = color, style = style, weight = weight)
+                                 color = color, style = style, weight = weight, strokecolor = strokecolor)
 
   }
   if (length(text) == 2) {
@@ -55,7 +55,7 @@ gifify <- function(file, text = "", cut = NULL,  gifname = "brilliant.gif",
 
   }
 
-  magick::image_write_gif(video_full, gifname, delay = 1/25)
+  magick::image_write_gif(video_full, gifname, delay = 1/20)
 
 }
 

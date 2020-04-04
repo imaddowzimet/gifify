@@ -5,8 +5,9 @@
 \title{Convert video to GIF (with subtitles)}
 \usage{
 gifify(file, text = "", cut = NULL, gifname = "brilliant.gif",
-  width = "400", color = "yellow", size = 22, gravity = "south",
-  style = "italic", weight = 700)
+  width = "400", color = "yellow", size = 22,
+  strokecolor = "black", gravity = "south", style = "italic",
+  weight = 700)
 }
 \arguments{
 \item{file}{File path to video file}
