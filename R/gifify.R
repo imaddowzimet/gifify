@@ -12,13 +12,14 @@
 #' @param gravity position of subtitle text. "south" is default.
 #' @param style font family.
 #' @param weight thickness of font.
+#' @param delay sets speed of GIF; default (1/20) should be normal speed.
 #' @return Returns a brilliant GIF.
 #' @export
 #'
 
 gifify <- function(file, text = "", cut = NULL,  gifname = "brilliant.gif",
                    width = "400", color = "yellow", size = 22, strokecolor = "black",
-                   gravity = "south", style = "italic", weight = 700) {
+                   gravity = "south", style = "italic", weight = 700, delay = 1/20) {
   assertthat::assert_that(length(text) <=2, msg = "More than two text strings provided")
   if (length(text) == 2)  {assertthat::assert_that(length(cut)==1, msg = "More one than one text string provided; please provide a cut point for when they should switch")}
   video       <- magick::image_read_video(file, fps=20)
@@ -55,7 +56,7 @@ gifify <- function(file, text = "", cut = NULL,  gifname = "brilliant.gif",
 
   }
 
-  magick::image_write_gif(video_full, gifname, delay = 1/20)
+  magick::image_write_gif(video_full, gifname, delay = delay)
 
 }
 

@@ -7,7 +7,7 @@
 gifify(file, text = "", cut = NULL, gifname = "brilliant.gif",
   width = "400", color = "yellow", size = 22,
   strokecolor = "black", gravity = "south", style = "italic",
-  weight = 700)
+  weight = 700, delay = 1/20)
 }
 \arguments{
 \item{file}{File path to video file}
@@ -29,6 +29,8 @@ gifify(file, text = "", cut = NULL, gifname = "brilliant.gif",
 \item{style}{font family.}
 
 \item{weight}{thickness of font.}
+
+\item{delay}{sets speed of GIF; default (1/20) should be normal speed.}
 }
 \value{
 Returns a brilliant GIF.
